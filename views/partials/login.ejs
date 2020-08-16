@@ -1,0 +1,14 @@
+<ul>
+  <% if(data.msg) { %>
+    <p> <%= data.msg %> <button onclick="event.target.parentElement.remove()" >X</button> </p> 
+  <% } %>
+</ul>
+
+<form action="/login" method="POST">
+  <label for="username">Username:</label>
+  <input type="text" name="username" placeholder="Enter Username..." />
+  <label for="password">Password:</label>
+  <input type="password" name="password" placeholder="Enter Password..." />
+  <input type="submit" value="Login" />
+  <a href="/register">Register</a>
+</form>
